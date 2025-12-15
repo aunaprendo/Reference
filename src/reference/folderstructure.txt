@@ -1,6 +1,6 @@
 project/
 │
-├── index.html                 <-- Main page example
+├── index.html                
 ├── partials/
 │   ├── nav-bar.html
 │   ├── side-menu.html

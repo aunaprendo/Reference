@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	 <!-- Stylesheets -->
+	<link rel="stylesheet" href="css/styleShared.css" />
+	<link rel="stylesheet" href="css/styleNavigations.css" />
+	<link rel="stylesheet" href="css/styleDetails.css" />
+	
+  <!-- Primary Meta Tags -->
+  <title>Georgia Jean - Portfolio</title>
+  <meta name="title" content="Portfolio" />
+  <meta name="description" content="Portfolio of a lifelong learner and analytical problem solver" />
+</head>
+
+<body>
+	<!-- Main navigation -->
+  <nav 
+    data-include="partials/navBar.html" 
+    role="navigation" 
+    aria-label="Primary navigation">
+  </nav>
+	
+	<!-- Side menu -->
+  <aside 
+    data-include="partials/sideMenu.html" 
+    role="navigation" 
+    aria-label="Side menu">
+  </aside>
+	
+	<!-- Contact menu -->
+  <aside 
+    data-include="partials/contactMenu.html" 
+    role="contact" 
+    aria-label="Contact Card">
+  </aside>
+	
+	<main>
+		<section id="circles">
+			<div class="cluster">
+		    <div class="cir top"></div>
+				<div class="cir bottom"><h1 class="center-text">Building knowledge experience, code, and value.</h1></div>
+				<div class="cir middle"><h2 class="center-text-bold">Georgia Jean Metz</h2></div>
+  		</div>	
+		</section>
+
+    <p>I am an analytical, self-driven developer with a strong focus on building efficient, maintainable systems. As a lifelong learner, I’ve earned multiple accreditations through self-directed study and demonstrated deep technical discipline by obtaining an architectural license without a formal architecture degree. I excel at recognizing patterns, structuring data and workflows, and managing tasks efficiently to deliver reliable results—an approach recognized through multiple performance awards. My experience in architectural design and as a Peace Corps volunteer strengthened my adaptability, problem-solving within constraints, and ability to collaborate across disciplines, translate non-technical requirements into technical solutions, and produce clear, well-documented systems that avoid redundancy, conflicts, and long-term maintenance issues.
+    </p>
+		
+		<section class="carousel-section">
+
+		  <div class="carousel-container">
+		    <button class="carousel-btn prev" aria-label="Previous projects">‹</button>
+		    <button class="carousel-btn next" aria-label="Next projects">›</button>
+		  </div>
+		
+		  <div class="carousel-bleed">
+		    <div class="carousel-viewport">
+		      <ul class="carousel-track">
+		        <li class="project-card">Project 1</li>
+		        <li class="project-card">Project 2</li>
+		        <li class="project-card">Project 3</li>
+		      </ul>
+		    </div>
+		  </div>
+		
+		</section>
+       
+	</main>
+	
+		<!-- Footer -->
+  <footer 
+    data-include="partials/footer.html" 
+    role="contentinfo" 
+    aria-label="Footer">
+  </footer>
+	
+  <script src="js/script.js"></script>
+
+</body>
+</html>
+
