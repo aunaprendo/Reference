@@ -1,10 +1,10 @@
 /* Center headings */
-h1 {
+.h1 {
   text-align: center;
 }
 
 /* Container for markers */
-.container {
+.marker-container {
   background-color: #ffffff; 
   padding: 10px 0;
 }
@@ -55,7 +55,7 @@ h1 {
 
 /* Accessibility enhancements for color indicators (for screen readers) */
 .marker::before {
-  content: attr(aria-label); /* Use aria-label to describe color */
+  content: attr(aria-label);
   position: absolute;
   left: -9999px; /* Hide visually but readable by screen readers */
 }
