@@ -1,0 +1,30 @@
+body {
+  position: relative;
+}
+
+/* Nut style */
+.nut {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none; /* so it doesn’t block clicks */
+  transform: translate(-50%, -50%) scale(0);
+  animation: popNut 0.8s forwards;
+  z-index: 1000;
+}
+
+/* Animation for popping up and fading */
+@keyframes popNut {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -150%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -200%) scale(1);
+    opacity: 0;
+  }
+}

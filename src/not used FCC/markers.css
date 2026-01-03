@@ -1,0 +1,81 @@
+/* Center headings */
+.h1 {
+  text-align: center;
+}
+
+/* Container for markers */
+.marker-container {
+  background-color: #ffffff; 
+  padding: 10px 0;
+}
+
+/* Marker wrapper */
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Marker cap */
+.cap {
+  width: 60px;
+  height: 25px;
+  display: inline-block;
+}
+
+/* Marker sleeve */
+.sleeve {
+  width: 110px;
+  height: 25px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+	position: relative;
+}
+
+/* Teal marker styling */
+.teal {
+ background: linear-gradient(
+  #043f4b, 
+  #065F6F, 
+  #087b88);
+  box-shadow: 0 0 20px 0 rgba(6, 95, 111, 0.8);
+}
+
+/* Brown marker styling */
+.brown {
+  background: linear-gradient(
+  #4a3600,  
+  #705200, 
+  #a87a1f);
+  box-shadow: 0 0 20px 0 #705200;
+}
+
+/* Gold marker styling */
+.gold {
+  background: linear-gradient(
+  #bfa33e,  
+  #D8B961,
+  #f0d980);
+  box-shadow: 0 0 20px 0 hsla(44, 55%, 62%, 0.8);
+}
+
+/* Accessibility enhancements for color indicators (for screen readers) */
+.marker::before {
+  content: attr(aria-label); /* Use aria-label to describe color */
+  position: absolute;
+  left: -9999px; /* Hide visually but readable by screen readers */
+}
+
+.acorn-icon {
+  position: relative;
+  left: 70%;           
+	top: 5%;
+  transform: rotate(270deg); /* Rotate 90 degrees */
+  width: 15px;         /* Adjust size */
+  height: 15px;
+	opacity: 70%;
+}

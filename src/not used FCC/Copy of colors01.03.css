@@ -1,0 +1,46 @@
+/* Body styling */
+#colored-boxes {
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Color box styling */
+.color-box {
+  width: 125px;
+  height: 125px;
+  display: inline-block;
+  margin: 5px;
+  border: 2px solid #000;
+  border-radius: 4px;
+}
+
+/* Individual colors */
+.color1 {
+  background-color: var(--accent-color-dteal); 
+}
+
+.color2 {
+  background-color: var(--accent-color-lteal); 
+}
+
+.color3 {
+  background-color: var( --accent-color-brown); 
+}
+
+.color4 {
+  background-color: var(--accent-color-gold); 
+}
+
+.color5 {
+  background-color: var(--accent-color-lgray); 
+}
+
+/* Accessibility improvements */
+.color-box:focus {
+  outline: 3px solid var(--accent-color-dgray);
+}
+
+.color-box:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+}
