@@ -1,0 +1,102 @@
+#greeting-background {
+  background-image: linear-gradient(white 5%, var(--accent-color-lteal));
+	background-size: cover;
+  background-position: center;
+}
+
+#card-title {
+	font-size: 3rem;
+}
+
+.greeting-card {
+  text-align: center;
+  box-sizing: border-box;
+  color: var(--text-color-main);
+	margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* Card Styling */
+.bday-card {
+  background-color: white;
+  max-width: 400px;
+  padding: 40px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px gray;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.bday-card:hover {
+  background-color: var(--accent-color-gold);
+  transform: scale(1.05);
+}
+
+/* Decorative Icons for H1 */
+.h1::after {
+  content: " 🌰";
+}
+
+/* Card Message Styling */
+.message {
+  font-size: 1.2em;
+  color: gray;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Card Links Styling */
+.bday-card-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bday-card-links a {
+  text-decoration: none;
+  font-size: 1em;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--accent-color-dteal);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.bday-card-links a:hover {
+  background-color: var(--accent-color-brown);
+}
+
+.bday-card-links a:active {
+  background-color: var(--accent-color-dteal);
+}
+
+.bday-card-links a:focus {
+  outline: 2px solid var(--accent-color-gold);
+  outline-offset: 2px;
+}
+
+.bday-card-links a:visited {
+  color: var(--accent-color-lteal);
+}
+
+/* Section Styling */
+.bday-section {
+  margin: 3rem auto 0 auto;
+  max-width: 600px;
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  display: none;
+}
+
+.bday-section:hover {
+  transform: skewX(10deg);
+}
+
+.bday-section:target {
+  display: block;
+}
